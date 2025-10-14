@@ -1,44 +1,49 @@
 # Digital - React + Vite Project
 
 ## Overview
-This is a React application built with Vite and featuring the React 19 Compiler. The project provides a minimal setup with Hot Module Replacement (HMR) and ESLint rules.
+Application React moderne construite avec Vite 7 et le compilateur React 19. Configuration optimale pour l'environnement Replit avec rechargement automatique et outils de développement.
 
-## Project Architecture
-- **Frontend Framework**: React 19.1.1
-- **Build Tool**: Vite 7.1.7
-- **Compiler**: React Compiler (babel-plugin-react-compiler)
-- **Dev Server**: Vite dev server on port 5000
-- **Entry Point**: src/main.jsx
+## Architecture du Projet
+- **Framework Frontend**: React 19.1.1
+- **Outil de Build**: Vite 7.1.7
+- **Compilateur**: React Compiler (babel-plugin-react-compiler)
+- **Serveur de Développement**: Vite sur le port 5000
+- **Point d'Entrée**: src/main.jsx
 
 ## Structure
 ```
 src/
-  - main.jsx          # Application entry point
-  - App.jsx           # Main App component
-  - App.css           # App styles
-  - index.css         # Global styles
-  - assets/           # Static assets
-public/               # Public assets
+  ├── main.jsx          # Point d'entrée de l'application
+  ├── App.jsx           # Composant principal
+  ├── App.css           # Styles du composant App
+  ├── index.css         # Styles globaux
+  └── assets/           # Ressources statiques
+public/                 # Fichiers publics
 ```
 
-## Key Dependencies
+## Dépendances Principales
 - React & React DOM 19.1.1
-- Vite with React plugin
-- ESLint with React-specific plugins
-- React Compiler (experimental)
+- Vite avec plugin React
+- ESLint avec plugins React
+- React Compiler (expérimental)
 
-## Development
-- Run `npm run dev` to start the development server
-- Server runs on port 5000 (configured for Replit)
-- HMR enabled for fast development
+## Développement
+```bash
+npm run dev      # Démarre le serveur de développement
+npm run build    # Build de production
+npm run preview  # Prévisualisation du build
+npm run lint     # Vérification ESLint
+```
 
-## Replit Configuration
-- Vite configured to bind to 0.0.0.0:5000
-- HMR clientPort set to 443 for Replit proxy
-- Preview server also configured for port 5000
+## Configuration Replit
+- **Server Host**: 0.0.0.0:5000
+- **Allowed Hosts**: Activé pour proxy Replit
+- **HMR Client Port**: 443 (HTTPS)
+- **Deployment**: Autoscale configuré
 
-## Recent Changes
-- 2025-10-14: Initial setup for Replit environment
-  - Configured Vite server settings for Replit compatibility
-  - Added Replit-specific files to .gitignore
-  - Set up development workflow
+## Historique des Modifications
+- **2025-10-14**: Configuration initiale pour Replit
+  - Configuration serveur Vite pour compatibilité Replit
+  - Ajout de allowedHosts pour proxy Replit
+  - Configuration du déploiement automatique
+  - Fichiers Replit ajoutés au .gitignore

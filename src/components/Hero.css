@@ -1,0 +1,140 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-title-1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--white);
+  display: block;
+}
+
+.hero-title-2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--primary-green);
+  display: block;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin: 1.5rem 0 2.5rem;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.875rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-green);
+  color: var(--black);
+}
+
+.btn-primary:hover {
+  background-color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 255, 157, 0.3);
+}
+
+.btn-secondary {
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--black);
+  transform: translateY(-2px);
+}
+
+.arrow, .icon {
+  font-size: 1.2rem;
+}
+
+.hero-visual {
+  position: relative;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.floating-icon {
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-visual {
+    height: 300px;
+    gap: 1.5rem;
+  }
+
+  .floating-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero-title-1,
+  .hero-title-2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .hero-visual {
+    height: 250px;
+    gap: 1rem;
+  }
+
+  .floating-icon {
+    font-size: 2rem;
+  }
+}

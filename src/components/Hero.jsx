@@ -25,7 +25,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <h1>
-              <span className="hero-title-1">Agence web</span>
+              <span className="hero-title-1">Agence de com</span>
               <br />
               <span className="hero-title-2">Digital Innovation.</span>
             </h1>

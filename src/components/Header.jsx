@@ -18,15 +18,6 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">Digital Innovation</div>
-          
-          <nav className="nav-menu">
-            <a href="#accueil">Accueil</a>
-            <a href="#about">À propos</a>
-            <a href="#services">Services</a>
-            <a href="#realisations">Réalisations</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-          </nav>
 
           <div className="social-icons">
             <a href="#" aria-label="Facebook"><FaFacebook /></a>

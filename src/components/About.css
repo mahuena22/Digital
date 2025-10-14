@@ -3,20 +3,28 @@
   color: var(--black);
 }
 
-.about-subtitle {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--navy);
-  margin-bottom: 1rem;
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.about-text {
+  max-width: 600px;
 }
 
 .about-title {
   font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 1.4;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.7;
   color: var(--black);
-  margin-bottom: 2.5rem;
-  max-width: 900px;
+  margin-bottom: 2rem;
 }
 
 .btn-about {
@@ -29,6 +37,7 @@
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-about:hover {
@@ -41,8 +50,59 @@
   font-size: 1.2rem;
 }
 
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--navy);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--navy);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--black);
+}
+
 @media (max-width: 768px) {
   .about-title {
     font-size: 1.75rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }

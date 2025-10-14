@@ -20,27 +20,6 @@ const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <h4 className="footer-title">Navigation</h4>
-            <ul className="footer-links">
-              <li><a href="#accueil">Accueil</a></li>
-              <li><a href="#about">À propos</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#realisations">Réalisations</a></li>
-              <li><a href="#blog">Blog</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-section">
-            <h4 className="footer-title">Services</h4>
-            <ul className="footer-links">
-              <li><a href="#services">Community Management</a></li>
-              <li><a href="#services">Design UI/UX</a></li>
-              <li><a href="#services">Copywriting</a></li>
-              <li><a href="#services">Développement Web</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-section">
             <h4 className="footer-title">Contact</h4>
             <ul className="footer-contact">
               <li>

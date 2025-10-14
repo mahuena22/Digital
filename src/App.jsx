@@ -9,6 +9,7 @@ import FAQ from './components/FAQ';
 import CTA from './components/CTA';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
+import BottomNav from './components/BottomNav';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <CTA />
       <Blog />
       <Footer />
+      <BottomNav />
     </>
   );
 }

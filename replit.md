@@ -16,12 +16,12 @@ Reproduction pixel-perfect du site [digitalinnovation.bj](https://www.digitalinn
 src/
   ├── components/
   │   ├── Header.jsx         # Logo + icônes sociales uniquement
-  │   ├── Hero.jsx          # Section héro "Agence de com Digital Innovation."
+  │   ├── Hero.jsx          # Section héro avec animation "de com/web"
   │   ├── About.jsx         # "Qui sommes nous" avec 4 cartes de services
   │   ├── Services.jsx      # Services supplémentaires
   │   ├── Portfolio.jsx     # Réalisations avec carrousel
   │   ├── Workflow.jsx      # Processus en 6 étapes avec icônes
-  │   ├── Testimonials.jsx  # Témoignages clients
+  │   ├── Testimonials.jsx  # Témoignages (photo + contenu horizontal)
   │   ├── FAQ.jsx          # Questions fréquentes
   │   ├── CTA.jsx          # Call-to-action
   │   ├── Blog.jsx         # Articles de blog
@@ -66,11 +66,12 @@ npm run lint     # Vérification ESLint
 
 ## Fonctionnalités
 ✅ Header simplifié (logo + icônes sociales)
-✅ Hero "Agence de com Digital Innovation."
-✅ Section "Qui sommes nous" avec 4 cartes de services
-✅ Workflow avec icônes pour chaque étape
+✅ Hero avec animation textuelle : "Agence de com / web" (alternance toutes les 2 secondes)
+✅ Section "Qui sommes nous" : texte à gauche + 4 cartes services en grille 2x2 à droite
+✅ Section Témoignages : layout photo/contenu sur fond bleu clair avec boutons navigation
+✅ Workflow avec icônes pour chaque étape (grille 3 colonnes)
 ✅ Navigation fixe en bas avec icônes des sections
-✅ Animations Framer Motion au scroll
+✅ Animations Framer Motion au scroll et transitions fluides
 ✅ Carrousel Swiper pour portfolio
 ✅ FAQ avec accordéon animé
 ✅ Design responsive (mobile/tablette/desktop)
@@ -78,6 +79,11 @@ npm run lint     # Vérification ESLint
 ✅ Reproduction fidèle du design original
 
 ## Historique des Modifications
+- **2025-10-14 (Dernière mise à jour)**: Ajustements finaux selon nouvelles captures
+  - Hero : animation textuelle alternant "de com" ↔ "web" toutes les 2 secondes
+  - Section About : layout corrigé (texte gauche, 4 cartes en grille 2x2 droite)
+  - Section Témoignages : nouveau design sur fond bleu avec photo/contenu horizontal et boutons navigation
+
 - **2025-10-14 (Mise à jour)**: Refonte design selon captures d'écran exactes
   - Header simplifié : suppression navigation, conservé logo + icônes sociales
   - Hero modifié : "Agence de com Digital Innovation." au lieu de "Agence web"

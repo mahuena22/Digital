@@ -5,16 +5,17 @@
 
 .about-content {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
 }
 
 .about-text {
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .about-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--navy);
   margin-bottom: 1.5rem;
@@ -53,8 +54,7 @@
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 1.5rem;
 }
 
 .service-card {
@@ -63,6 +63,7 @@
   border-radius: 12px;
   border-left: 4px solid var(--navy);
   transition: all 0.3s ease;
+  min-height: 200px;
 }
 
 .service-card:hover {
@@ -73,32 +74,42 @@
 .service-icon {
   width: 50px;
   height: 50px;
-  background: var(--navy);
-  border-radius: 8px;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--white);
+  color: var(--navy);
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .service-title {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--navy);
   margin-bottom: 0.75rem;
 }
 
 .service-description {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: var(--black);
 }
 
+@media (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .about-title {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   .services-grid {

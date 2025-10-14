@@ -1,9 +1,21 @@
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaWordpress, FaFigma, FaNodeJs, FaPython, FaDatabase } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
 import './Hero.css';
 
 const Hero = () => {
+  const [textIndex, setTextIndex] = useState(0);
+  const texts = ['de com', 'web'];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const floatingIcons = [
     { Icon: FaReact, color: '#61DAFB', delay: 0 },
     { Icon: FaWordpress, color: '#21759B', delay: 0.2 },
@@ -25,7 +37,21 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <h1>
-              <span className="hero-title-1">Agence de com</span>
+              <span className="hero-title-1">
+                Agence{' '}
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={textIndex}
+                    className="animated-text"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {texts[textIndex]}
+                  </motion.span>
+                </AnimatePresence>
+              </span>
               <br />
               <span className="hero-title-2">Digital Innovation.</span>
             </h1>

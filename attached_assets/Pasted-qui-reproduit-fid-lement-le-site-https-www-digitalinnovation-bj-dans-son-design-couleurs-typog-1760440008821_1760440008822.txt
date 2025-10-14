@@ -1,0 +1,94 @@
+qui reproduit fidèlement le site https://www.digitalinnovation.bj/
+ dans son design, couleurs, typographie, images et structure.
+
+🏗️ Structure du site
+
+Header / Navbar : logo « Digital Innovation », menu de navigation fluide avec ancres vers les sections (« Accueil », « À propos », « Services », « Réalisations », « Blog », « Contact »).
+
+Section Héros : grande image ou vidéo d’arrière-plan, texte principal “Entrepreneurs, TPE, PME, startups SaaS : on vous propulse dans l’ère du digital.” + bouton d’appel à l’action (“En savoir plus” ou “Contactez-nous”).
+
+Section “Qui sommes-nous” : texte de présentation, mission, valeurs de l’agence.
+
+Section “Nos Services” :
+
+Community & Social Media Manager
+
+Designer graphique & UI/UX
+
+Copywriter & Ghostwriter
+
+Développeurs web & mobile
+→ Présente chaque service avec icône, titre et description.
+
+Section “Réalisations” (portfolio) : slider / carrousel d’images avec projets (virtualedgeagency.com, ceforaformation.com, etc.) + navigation par flèches.
+
+Section “Workflow efficace” : étapes visuelles — Écoute & Analyse, Stratégie & Planification, Design & Création, Développement & Implémentation, Tests & Optimisation, Lancement & Suivi.
+
+Section “Témoignages” / Avis clients : citations + photo ou avatar client.
+
+Section “FAQ” : questions/réponses sous forme d’accordéon.
+
+Section “Derniers articles / Blog” : images, titres, extraits, lien “Lire plus”.
+
+Footer / Pied de page : e-mail, téléphone, adresse, réseaux sociaux, mentions légales.
+
+🎨 Design & identité visuelle
+
+Reproduis fidèlement la palette de couleurs, les polices (Google Fonts ou équivalentes), la disposition et les espacements du site Digital Innovation.
+
+Même structure de mise en page : marges, paddings, alignements, proportions, tailles de texte, styles de boutons.
+
+Tous les boutons et liens doivent reproduire les mêmes effets hover / transitions que le site original.
+
+Le design doit être responsive (mobile, tablette, desktop).
+
+✨ Animations & interactions
+
+Reproduis les animations visibles sur le site :
+
+Fade-in / slide des sections lors du scroll.
+
+Transitions douces sur les boutons et liens.
+
+Carrousel fluide (défilement horizontal avec boutons ou swipe).
+
+Utilise Framer Motion ou React Spring pour les effets d’animation.
+
+🖼️ Contenu
+
+Garde les textes et visuels d’origine du site Digital Innovation.
+
+Si les images exactes ne sont pas récupérables, remplace-les par des placeholders équivalents de même dimension et ton.
+
+Tous les textes doivent rester en français.
+
+⚙️ Technologies à utiliser
+
+React (via Create React App ou Vite).
+
+CSS Modules ou TailwindCSS pour le style.
+
+Framer Motion ou React Spring pour les animations.
+
+Swiper.js ou React Slick pour le carrousel.
+
+Compatible Vercel (structure de build standard).
+
+🚀 Livrable attendu
+
+Code source complet prêt à déployer sur Vercel (package.json, vite.config.js ou react-scripts).
+
+Fichiers bien organisés :
+
+components/ → Header, Hero, Services, Portfolio, Testimonials, FAQ, Blog, Footer
+
+assets/ → images, icônes
+
+App.js → structure principale du site
+
+Reproduction pixel-perfect du site original : typographies, couleurs, espacement, layout, animations.
+
+Inclure instructions d’installation et de lancement local (npm install, npm run dev ou npm start).
+
+⚠️ Ne simplifie pas le design. Le but est une copie fidèle, avec la même expérience visuelle et interactive que https://www.digitalinnovation.bj/
+.

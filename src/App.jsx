@@ -1,6 +1,5 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
-import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Workflow from './components/Workflow';
@@ -16,7 +15,6 @@ function App() {
     <>
       <Header />
       <Hero />
-      <About />
       <Services />
       <Portfolio />
       <Workflow />

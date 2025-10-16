@@ -1,6 +1,7 @@
 .about {
-  background-color: var(--light-blue-bg);
+  background-color: #E0F2FE;
   color: var(--black);
+  padding: 5rem 0;
 }
 
 .about-content {
@@ -15,42 +16,49 @@
 }
 
 .about-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  color: var(--navy);
+  color: #1E3A8A;
   margin-bottom: 1.5rem;
+  line-height: 1.2;
 }
 
 .about-description {
   font-size: 1rem;
-  line-height: 1.7;
-  color: var(--black);
+  line-height: 1.8;
+  color: #1E293B;
   margin-bottom: 2rem;
 }
 
 .btn-about {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
   padding: 0.875rem 2rem;
   background-color: transparent;
-  color: var(--navy);
-  border: 2px solid var(--navy);
+  color: #1E3A8A;
+  border: 2px solid #1E3A8A;
   border-radius: 50px;
   font-weight: 600;
+  font-size: 1rem;
   transition: all 0.3s ease;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .btn-about:hover {
-  background-color: var(--navy);
+  background-color: #1E3A8A;
   color: var(--white);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.3);
+  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.3);
 }
 
 .btn-about .arrow {
   font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-about:hover .arrow {
+  transform: translateX(4px);
 }
 
 .services-grid {
@@ -63,7 +71,7 @@
   background: var(--white);
   padding: 2rem;
   border-radius: 12px;
-  border: 2px solid rgba(30, 64, 175, 0.15);
+  border: 1px solid rgba(30, 58, 138, 0.1);
   transition: all 0.3s ease;
   min-height: 200px;
 }
@@ -71,32 +79,33 @@
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-color: var(--navy);
+  border-color: rgba(30, 58, 138, 0.3);
 }
 
 .service-icon {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--navy);
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  color: #1E3A8A;
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
 }
 
 .service-title {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 0.75rem;
+  color: #1E3A8A;
+  margin-bottom: 0.875rem;
+  line-height: 1.4;
 }
 
 .service-description {
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   line-height: 1.6;
-  color: var(--black);
+  color: #475569;
 }
 
 @media (max-width: 1024px) {
@@ -111,8 +120,12 @@
 }
 
 @media (max-width: 768px) {
+  .about {
+    padding: 3rem 0;
+  }
+
   .about-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .services-grid {

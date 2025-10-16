@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { FaUsers, FaPencilAlt, FaPalette, FaCode } from 'react-icons/fa';
+import { FaChartLine, FaPalette, FaPenNib, FaCode } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
   const services = [
     {
-      icon: FaUsers,
+      icon: FaChartLine,
       title: 'Community & Social Media Manager',
       description: 'Nous transformons vos réseaux sociaux en puissants leviers de croissance grâce à des contenus engageants.',
     },
@@ -15,7 +15,7 @@ const About = () => {
       description: 'Nos designers créent des designs qui captivent et des interfaces qui marquent, alliant créativité et expérience utilisateur.',
     },
     {
-      icon: FaPencilAlt,
+      icon: FaPenNib,
       title: 'Copywriter & Ghostwriter',
       description: 'Nous donnons vie à vos idées avec des mots qui inspirent, convainquent et fidélisent votre audience.',
     },
@@ -44,10 +44,10 @@ const About = () => {
               accompagnons entrepreneurs, TPE, PME et startups dans leur transformation 
               numérique, avec des solutions créatives et sur mesure.
             </p>
-            <a href="/about" className="btn-about">
+            <button className="btn-about">
               En savoir plus sur nous
               <span className="arrow">→</span>
-            </a>
+            </button>
           </motion.div>
 
           <div className="services-grid">

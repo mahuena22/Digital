@@ -60,9 +60,17 @@ npm run lint     # Vérification ESLint
 
 ## Configuration Replit
 - **Server Host**: 0.0.0.0:5000
-- **Allowed Hosts**: true (pour proxy Replit)
-- **HMR Client Port**: 443
+- **HMR**: WebSocket (wss) sur port 443 avec REPLIT_DEV_DOMAIN
 - **Deployment**: Autoscale (npm run build + preview)
+- **Workflow**: Server (npm run dev) sur port 5000
+
+## État du Projet (Octobre 2025)
+✅ **Importation GitHub complétée**
+✅ **Dépendances installées** (npm install)
+✅ **Workflow configuré** (Server sur port 5000)
+✅ **HMR Vite fonctionnel** (WebSocket configuré pour Replit)
+✅ **Déploiement configuré** (Autoscale avec build + preview)
+✅ **Application opérationnelle** sur Replit
 
 ## Fonctionnalités
 ✅ Header simplifié (logo + icônes sociales)

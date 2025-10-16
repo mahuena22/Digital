@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
+import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Workflow from './components/Workflow';
 import Testimonials from './components/Testimonials';
@@ -14,6 +15,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <About />
       <Portfolio />
       <Workflow />
       <Testimonials />
